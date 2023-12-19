@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Worldwide Weather</h1>
+
+    <form class="search">
+      <div class="mainSearch">
+        <input type="search" id="searchInput" />
+        <button>Search</button>
+      </div>
+      <div class="optionSearch">
+        <input
+          type="radio"
+          name="units"
+          id="imperial"
+          value="imperial"
+          checked
+        />
+        <label for="imperial">ºF</label>
+        <input type="radio" name="units" id="metric" value="metric" />
+        <label for="metric">ºC</label>
+      </div>
+    </form>
+
+    <div class="panel">
+      <div class="title">--</div>
+
+      <div class="info">
+        <div class="temp">
+          <div class="tempTitle">Temperature</div>
+          <div class="tempInfo">-- <sup>ºF</sup></div>
+          <img src="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="warning"></div>
+
+    <footer>
+      <a href="https://github.com/lin-kek" target="_blank">
+        <img src="./img/profile-picture.jpg" alt="Creator profile picture" />
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
